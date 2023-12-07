@@ -3,7 +3,7 @@
 namespace App\Services;
 
 use App\DTOS\VendaDTO;
-use App\Repositories\VendasRepositoryInterface;
+use app\Repositories\VendasRepositoryInterface;
 
 class VendasService
 {

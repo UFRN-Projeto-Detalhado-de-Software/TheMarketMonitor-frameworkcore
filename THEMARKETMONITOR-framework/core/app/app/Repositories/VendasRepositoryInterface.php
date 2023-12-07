@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories;
+namespace app\Repositories;
 
 use App\DTOS\VendaDTO;
 
@@ -15,10 +15,6 @@ interface VendasRepositoryInterface
     public function update(VendaDTO $dto, $id);
 
     public function destroy($id);
-
-    public function get_sdr();
-
-    public function get_closer();
 
 
 }

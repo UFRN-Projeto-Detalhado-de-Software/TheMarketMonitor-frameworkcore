@@ -2,10 +2,9 @@
 
 namespace App\Repositories;
 
-use App\DTOS\PeriodoDTO;
 use App\DTOS\PeriodoTipoDTO;
 use App\Models\PeriodoTipo;
-use App\Repositories\PeriodoTipoRepositoryInterface;
+use app\Repositories\Abstract\PeriodoTipoRepositoryInterface;
 
 class PeriodoTipoRepository implements PeriodoTipoRepositoryInterface
 {

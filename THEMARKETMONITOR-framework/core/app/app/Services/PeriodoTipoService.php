@@ -3,13 +3,7 @@
 namespace App\Services;
 
 use App\DTOS\PeriodoTipoDTO;
-use App\Models\Periodo;
-use App\Models\PeriodoTipo;
-use App\Repositories\PeriodoTipoRepositoryInterface;
-use Carbon\Carbon;
-use Dflydev\DotAccessData\Data;
-use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Http\Request;
+use app\Repositories\Abstract\PeriodoTipoRepositoryInterface;
 
 class PeriodoTipoService
 {

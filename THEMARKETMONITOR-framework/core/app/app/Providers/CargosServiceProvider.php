@@ -9,7 +9,7 @@ class CargosServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind(
-            'App\Repositories\CargosRepositoryInterface',
+            'app\Repositories\Abstract\CargosRepositoryInterface',
             'App\Repositories\CargosRepository'
         );
     }

@@ -3,13 +3,9 @@
 namespace App\Repositories;
 
 use App\DTOS\FuncionarioDTO;
-use App\DTOS\MetaDTO;
-use App\DTOS\PeriodoDTO;
 use App\Models\Funcionario;
-use App\Models\Periodo;
 use App\Models\User;
-use App\Repositories\FuncionariosRepositoryInterface;
-use App\Repositories\strategy\MetaRepositoryStrategy;
+use app\Repositories\Abstract\FuncionariosRepositoryInterface;
 use App\Repositories\strategy\MetaRepositoryStrategyOriginal;
 
 class FuncionariosRepository implements FuncionariosRepositoryInterface

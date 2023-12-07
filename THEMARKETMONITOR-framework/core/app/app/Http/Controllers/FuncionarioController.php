@@ -4,11 +4,8 @@ namespace App\Http\Controllers;
 
 use App\DTOS\CargosDTO;
 use App\DTOS\FuncionarioDTO;
-use App\Http\Controllers\Controller;
 use App\Services\FuncionarioService;
 use Illuminate\Http\Request;
-use App\Models\Funcionario;
-use App\Repositories\FuncionariosRepositoryInterface;
 
 class FuncionarioController extends Controller
 {

@@ -4,7 +4,7 @@ namespace App\Repositories;
 
 use App\DTOS\UserDTO;
 use App\Models\User;
-use App\Repositories\UserRepositoryInterface;
+use app\Repositories\Abstract\UserRepositoryInterface;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;

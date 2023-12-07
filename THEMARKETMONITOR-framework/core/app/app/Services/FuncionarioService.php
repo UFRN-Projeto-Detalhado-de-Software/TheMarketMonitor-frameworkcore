@@ -3,11 +3,7 @@
 namespace App\Services;
 
 use App\DTOS\FuncionarioDTO;
-use App\Models\Funcionario;
-use App\Models\User;
-use App\Repositories\FuncionariosRepositoryInterface;
-use App\Repositories\VendasRepositoryInterface;
-use Illuminate\Http\Request;
+use app\Repositories\Abstract\FuncionariosRepositoryInterface;
 
 class FuncionarioService
 {

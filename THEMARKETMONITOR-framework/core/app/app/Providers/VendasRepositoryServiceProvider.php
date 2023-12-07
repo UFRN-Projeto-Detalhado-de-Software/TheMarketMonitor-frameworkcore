@@ -1,12 +1,9 @@
 <?php
-namespace App\Providers;
+namespace app\Providers;
 
-use App\Http\Controllers\Abstract\VendaControllerAbs;
-use App\Http\Controllers\VendaControllerLoja;
-use App\Repositories\VendaRepositoryLoja;
-use App\Repositories\VendaRepositoryStrategy;
-use App\Repositories\VendasRepository;
-use App\Repositories\VendasRepositoryInterface;
+use App\Repositories\VendasLojaRepository;
+use app\Repositories\VendasRepositoryInterface;
+use App\Services\VendaServiceStrategy;
 use App\Services\VendaServiceLoja;
 use Illuminate\Support\ServiceProvider;
 
@@ -14,7 +11,8 @@ class VendasRepositoryServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        $this->app->bind(VendasRepositoryInterface::class, VendasRepository::class);
+        $this->app->bind(VendasRepositoryInterface::class, VendasLojaRepository::class);
+        $this->app->bind(VendaServiceStrategy::class, VendaServiceLoja::class);
     }
 
 }
