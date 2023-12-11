@@ -4,6 +4,7 @@ namespace App\Repositories;
 
 use App\DTOS\VendaDTO;
 use App\Models\Vendas;
+use Illuminate\Support\Facades\DB;
 
 class VendasLojaRepository implements VendasRepositoryInterface
 {
@@ -21,16 +22,8 @@ class VendasLojaRepository implements VendasRepositoryInterface
     public function store(VendaDTO $dto)
     {
         try {
-            // Converta o DTO para um array associativo
-            $dadosVenda = (array) $dto;
-
-            if (!array_key_exists('obs', $dadosVenda)) {
-                $dadosVenda['obs'] = null;
-            }
-
             // Valide e sanitize os dados do DTO conforme necessário
-            //to do convert_dto_model();
-            $venda = Vendas::create($dadosVenda);
+            $venda = Vendas::create((array) $dto);
 
             return ['success' => true, 'data' => $venda];
         } catch (\Exception $e) {
@@ -94,4 +87,6 @@ class VendasLojaRepository implements VendasRepositoryInterface
 
         return $closers;
     }
+
+
 }

@@ -11,6 +11,7 @@ class VendaServiceLoja implements VendaServiceStrategy
     {
         $limiteMinimo = 1000;
         if ($dados->valor < $limiteMinimo) {
+            info('Exceção lançada: O valor da venda deve ser igual ou superior a ' . $limiteMinimo);
             throw new \Exception('O valor da venda deve ser igual ou superior a ' . $limiteMinimo);
         }
 

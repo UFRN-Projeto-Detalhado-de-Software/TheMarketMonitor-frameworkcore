@@ -16,5 +16,8 @@ interface VendasRepositoryInterface
 
     public function destroy($id);
 
+    public function get_closer();
+    public function get_sdr();
+
 
 }
