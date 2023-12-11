@@ -4,7 +4,6 @@ namespace App\Repositories;
 
 use App\DTOS\CargosDTO;
 use App\Models\Cargo;
-use app\Repositories\Abstract\CargosRepositoryInterface;
 
 class CargosRepository implements CargosRepositoryInterface
 {

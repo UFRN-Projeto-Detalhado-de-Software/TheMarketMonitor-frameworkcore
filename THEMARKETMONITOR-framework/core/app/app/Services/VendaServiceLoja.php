@@ -30,7 +30,7 @@ class VendaServiceLoja implements VendaServiceStrategy
     {
         $venda = $this->find($id);
         if ($venda = null) {
-            throw new \Exception('Não é possível excluir esta venda de acordo com as regras da corretora.');
+            throw new \Exception('Não é possível excluir esta venda de acordo com as regras da Loja.');
         }
 
         return true;

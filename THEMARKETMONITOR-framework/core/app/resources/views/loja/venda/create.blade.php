@@ -31,13 +31,7 @@
                     <option value="{{ $prod->id }}">{{ $prod->name}}</option>
                 @endforeach
             </select>
-            <select name="closer" required id="id" >
-                <option value="" selected>Escolha um Vendedor</option>
-                @foreach($closer as $id => $nome)
-                    <option value="{{ $id }}">{{ $nome }}</option>
-                @endforeach
-            </select>
-
+            
             <select name="tipo" required id="id" >
                 <option value="" selected>Escolha o tipo da venda</option>
                 <option value="0">Nenhum</option>

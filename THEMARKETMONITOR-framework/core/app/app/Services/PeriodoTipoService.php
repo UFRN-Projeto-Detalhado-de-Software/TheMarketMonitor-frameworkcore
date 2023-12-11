@@ -3,7 +3,7 @@
 namespace App\Services;
 
 use App\DTOS\PeriodoTipoDTO;
-use app\Repositories\Abstract\PeriodoTipoRepositoryInterface;
+use app\Repositories\PeriodoTipoRepositoryInterface;
 
 class PeriodoTipoService
 {

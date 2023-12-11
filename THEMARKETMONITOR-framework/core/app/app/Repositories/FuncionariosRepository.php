@@ -5,7 +5,6 @@ namespace App\Repositories;
 use App\DTOS\FuncionarioDTO;
 use App\Models\Funcionario;
 use App\Models\User;
-use app\Repositories\Abstract\FuncionariosRepositoryInterface;
 use App\Repositories\strategy\MetaRepositoryStrategyOriginal;
 
 class FuncionariosRepository implements FuncionariosRepositoryInterface

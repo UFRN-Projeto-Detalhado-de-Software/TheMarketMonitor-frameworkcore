@@ -35,15 +35,14 @@ class VendaControllerLoja extends VendaControllerAbs
         $produto = Produto::all();
         $meiopagamento = MeioPagamento::all();
         $tipovenda = TipoVenda::all();
-        $closer = $this->serviceLoja->get_closer();
-        $sdr = $this->serviceLoja->get_sdr();
+    
 
         return view('loja/venda/create', [
             'origemdavenda' => $origensvendas,
             'produto'       => $produto,
             'meiopagamento' => $meiopagamento,
             'tipovenda'     => $tipovenda,
-            'closer'        => $closer,
+            'closer'        => null,
             'sdr'           => null
         ]);
 

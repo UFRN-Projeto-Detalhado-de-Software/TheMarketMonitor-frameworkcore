@@ -3,7 +3,7 @@
 namespace App\Services;
 
 use App\DTOS\FuncionarioDTO;
-use app\Repositories\Abstract\FuncionariosRepositoryInterface;
+use app\Repositories\FuncionariosRepositoryInterface;
 
 class FuncionarioService
 {

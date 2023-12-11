@@ -10,7 +10,7 @@ class FuncionariosRepositoryServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind(
-            'app\Repositories\Abstract\FuncionariosRepositoryInterface',
+            'app\Repositories\FuncionariosRepositoryInterface',
             'App\Repositories\FuncionariosRepository'
         );
     }

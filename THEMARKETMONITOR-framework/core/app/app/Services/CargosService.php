@@ -3,7 +3,7 @@
 namespace App\Services;
 
 use App\DTOS\CargosDTO;
-use app\Repositories\Abstract\CargosRepositoryInterface;
+use app\Repositories\CargosRepositoryInterface;
 
 class CargosService
 {

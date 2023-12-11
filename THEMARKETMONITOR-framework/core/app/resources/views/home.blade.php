@@ -35,7 +35,7 @@
             </li>
 
             <li>
-                <a class="btn btn-primary" href="{{route('vendas.index')}}">
+                <a class="btn btn-primary" href="{{route('loja.index')}}">
                     <button type="button" class="button button1">VENDAS</button>
                 </a>
             </li>

@@ -1,6 +1,6 @@
 <?php
 
-namespace app\Repositories\Abstract;
+namespace app\Repositories;
 
 use App\DTOS\CargosDTO;
 

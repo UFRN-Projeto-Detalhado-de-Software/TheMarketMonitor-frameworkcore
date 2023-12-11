@@ -9,7 +9,7 @@ class PeriodoTipoRepositoryServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind(
-            'app\Repositories\Abstract\PeriodoTipoRepositoryInterface',
+            'app\Repositories\PeriodoTipoRepositoryInterface',
             'App\Repositories\PeriodoTipoRepository'
         );
     }
